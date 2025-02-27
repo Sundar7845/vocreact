@@ -1,12 +1,17 @@
-import React from 'react'
-import MultiStepForm from '../components/MultiStepForm'
+import { Head } from '@inertiajs/react';
+import MultiStepForm from '../components/MultiStepForm';
 
 const welcome = () => {
-  return (
-    <div>
-        <MultiStepForm />
-    </div>
-  )
-}
+    return (
+        <>
+            <Head>
+                <title>VOC Feedback Form</title>
+            </Head>
+            <div>
+                <MultiStepForm />
+            </div>
+        </>
+    );
+};
 
-export default welcome
+export default welcome;
